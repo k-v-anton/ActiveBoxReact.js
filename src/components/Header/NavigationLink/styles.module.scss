@@ -1,0 +1,42 @@
+@use '_/styles/mixins.scss' as mix;
+@use '_/styles/variables.scss' as var;
+
+.link {
+  padding: 2em;
+  background-color: var(--color-link-normal);
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  white-space: nowrap;
+  transition: color var(--duration-change-property-main) var(--timing-function-main);
+  @include mix.h6;
+
+  &:before {
+    content: '';
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: .2em;
+    position: absolute;
+    transform: translate(-50%, 0);
+    background-color: var(--color-link-hover);
+    transition: 
+      background-color var(--duration-active-element) var(--timing-function-main), 
+      width var(--duration-show-element-main) var(--timing-function-main);
+  }
+
+  &:hover {
+    &:before {
+      content: '';
+      width: 100%;
+    }
+  }
+
+  &:active {
+    color: var(--color-link-active);
+
+    &:before {
+      background-color: var(--color-link-active);
+    }
+  }
+}

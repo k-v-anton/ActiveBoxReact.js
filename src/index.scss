@@ -1,0 +1,17 @@
+@use './styles/mixins.scss' as mix;
+@use './styles/fonts.scss';
+@import '~normalize.css';
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5em;
+}

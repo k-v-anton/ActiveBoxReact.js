@@ -1,0 +1,54 @@
+@use './variables.scss';
+
+
+@mixin h1 {
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 4em;
+  line-height: 1.17em;
+  text-transform: uppercase;
+  color: var(--color-text-title);
+}
+
+@mixin h2 {
+  font-family: var(--font-title);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 1.17em;
+  color: var(--color-text-title);
+}
+
+@mixin h3 {
+  font-family: var(--font-title);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 1.17em;
+  color: var(--color-text-title);
+}
+
+@mixin h4 {
+  font-family: var(--font-title);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 1.17em;
+  color: var(--color-text-title);
+}
+
+@mixin h5 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: var(--color-text-title);
+}
+
+@mixin h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.8125em;
+  line-height: 1.17em;
+  color: var(--color-text-title);
+}
