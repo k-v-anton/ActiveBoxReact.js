@@ -1,0 +1,33 @@
+@use '../../../styles/mixins.scss' as mix;
+
+.container {
+  @include mix.flexColumnHorizontalCenter;
+  background: #2C3154;
+  padding: 1.5em;
+}
+
+.copirightt {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #808080;
+}
+
+.copirighttBolt {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}

@@ -4,8 +4,32 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 12%;
+  z-index: 10;
+  min-height: 5em;
+  
 }
 
 .navigation {
   display: flex;
+}
+
+.navigationMobile {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #000000;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transition: clip-path .25s linear;
+}
+
+.navigationMobileActive {
+  clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
 }

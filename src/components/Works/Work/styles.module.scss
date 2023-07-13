@@ -1,0 +1,51 @@
+@use '_/styles/mixins.scss' as mix;
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.work {
+  width: 100%;
+  min-height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  &:hover~.wrapper {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 28, 28, .6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  scale: 0;
+  opacity: .5;
+  transition: scale .25s linear, opacity .25s linear;
+
+  &:hover {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.projectName {
+  text-transform: uppercase;
+  @include mix.h4(var(--color-text-title));
+  margin: 0
+}
+
+.description {
+  @include mix.h5(var(--color-text-title));
+  margin: 0;
+}

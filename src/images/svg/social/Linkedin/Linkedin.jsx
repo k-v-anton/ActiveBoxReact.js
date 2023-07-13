@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-export const Linedin = () => {
+export const Linkedin = () => {
   return (
     <svg className={styles.svg} viewBox='0 0 39 39' xmlns='http://www.w3.org/2000/svg'>
       <rect className={styles.rect} x='0.5' y='0.5' />

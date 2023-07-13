@@ -1,0 +1,11 @@
+.footer {}
+
+.content {
+  background: #353C65;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 4.5em 2em;
+
+}
+

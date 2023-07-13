@@ -1,8 +1,10 @@
 :root {
   --font-title: 'Raleway';
+  --font-sub: 'Cardo';
   
   --color-text-title: #ffffff;
-  --color-text-main: #000000;
+  --color-title-main: #000000;
+  --color-text-main: #6C7279;
 
   --color-link-normal: transparent;
   --color-link-hover: #babbc5;
@@ -12,6 +14,8 @@
   --color-btn-hover: #E71414;
   --color-btn-active: #FF4343;
 
+  --color-slider-bg: #5C3249;
+
   --duration-show-element-main: .25s;
   --duration-change-property-main: .25s;
   --duration-active-element: .125s;
@@ -19,4 +23,8 @@
   --timing-function-main: linear;
 
   --padding-button-main: 1em 3em;
+  --padding-sliter-description: 7.5em;
+
+  --gap-main: 1em;
+  --font-weight-main: 400;
 }

@@ -1,0 +1,22 @@
+@use '../../styles/mixins.scss' as mix;
+
+.container {
+  @include mix.flexColumnCenter;
+  margin: 0 auto;
+  max-width: 75em;
+  width: 100%;
+}
+
+.title {
+  @include mix.h3(#000000);
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+
+.subtitle {
+  @include mix.h5(#000000);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2em;
+}

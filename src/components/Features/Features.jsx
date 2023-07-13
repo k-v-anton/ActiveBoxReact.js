@@ -6,8 +6,7 @@ import { featuresData } from './Features.Data'
 export const Features = () => {
   return (
     <section className={styles.container}>
-      {featuresData.map(card => <Card key={card.id} {...card}/>)}
-     
+      {featuresData.map(card => <Card key={card.id}  {...card}/>)}
     </section>
   )
 }

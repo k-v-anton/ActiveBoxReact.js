@@ -1,12 +1,17 @@
 import React from 'react'
-import { Header } from '../Header'
 import { Features } from '../Features'
+import { Header } from '../Header'
 
 export const App = () => {
   return (
     <>
       <Header />
-      <Features/>
+      <Features />
+      {/*<Works />
+      <OurTeam />
+      <Slider />
+      <Download />
+      <Footer/> */}
     </>
   )
 }

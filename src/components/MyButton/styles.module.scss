@@ -7,7 +7,7 @@
   background-color: var(--color-btn-normal);
   padding: var(--padding-button-main);
   transition: background-color var(--duration-change-property-main) var(--timing-function-main),;
-  @include mix.h4;
+  @include mix.h4(var(--color-text-title));
 
   &:hover {
     background-color: var(--color-btn-hover);

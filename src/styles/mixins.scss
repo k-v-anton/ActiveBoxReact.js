@@ -1,54 +1,103 @@
 @use './variables.scss';
 
+// FONTS
 
-@mixin h1 {
+@mixin h1($color) {
   font-family: var(--font-title);
   font-weight: 900;
   font-size: 4em;
   line-height: 1.17em;
   text-transform: uppercase;
-  color: var(--color-text-title);
+  color: $color;
 }
 
-@mixin h2 {
+@mixin h2($color) {
   font-family: var(--font-title);
   font-style: normal;
   font-weight: 700;
   font-size: 2.25em;
   line-height: 1.17em;
-  color: var(--color-text-title);
+  color: $color;
 }
 
-@mixin h3 {
+@mixin h3($color) {
   font-family: var(--font-title);
   font-style: normal;
   font-weight: 700;
   font-size: 1.875em;
   line-height: 1.17em;
-  color: var(--color-text-title);
+  color: $color;
 }
 
-@mixin h4 {
+@mixin h4($color) {
   font-family: var(--font-title);
   font-style: normal;
   font-weight: 900;
   font-size: 1.5em;
   line-height: 1.17em;
-  color: var(--color-text-title);
+  color: $color;
 }
 
-@mixin h5 {
+@mixin h5($color) {
   font-family: var(--font-title);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17em;
-  color: var(--color-text-title);
+  color: $color;
 }
 
-@mixin h6 {
+@mixin h6($color) {
   font-family: var(--font-title);
   font-weight: 700;
   font-size: 0.8125em;
   line-height: 1.17em;
-  color: var(--color-text-title);
+  color: $color;
+}
+
+@mixin textOverflow($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+// FLEX
+@mixin flexCenter  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexColumnVerticalCenter  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flexColumnHorizontalCenter  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexColumnCenter  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// GRID
+
+@mixin gridColumn($countColumn) {
+  display: grid;
+  grid-template-columns: repeat($countColumn, 1fr);
+}
+
+@mixin imagePosition {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
