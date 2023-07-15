@@ -30,3 +30,13 @@
   @include mix.h6(var(--color-text-title));
   text-transform: uppercase;
 }
+
+@media (max-width: 748px) {
+  .slide {
+    @include mix.gridColumn(1);
+  }
+
+  .description {
+    padding: 3em 2em ;
+  }
+}

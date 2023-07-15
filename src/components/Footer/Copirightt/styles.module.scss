@@ -7,27 +7,25 @@
 }
 
 .copirightt {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @include mix.flexCenter;
+  @include mix.h5(#808080);
   text-transform: capitalize;
-  color: #808080;
+  gap: 0.3em;
 }
 
 .copirighttBolt {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @include mix.flexCenter;
+  @include mix.h5(#FFFFFF);
   text-transform: capitalize;
-  color: #FFFFFF;
+}
+
+@media (max-width: 748px) {
+  .copirightt {
+  font-size: .8em;
+  }
+  
+  .copirighttBolt {
+
+    font-size: .8em;
+  }
 }

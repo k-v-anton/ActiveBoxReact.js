@@ -2,11 +2,27 @@
 @use './styles/fonts.scss';
 @use '~scss-reset/reset';
 
+* {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #766fa1;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-left: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #2f10c8;
+  }
+}
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include mix.flexCenter;
 }
 
 #root {

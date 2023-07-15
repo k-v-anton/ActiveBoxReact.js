@@ -1,4 +1,6 @@
 .app {
-  text-transform: uppercase;
-  color: red;
+display: flex;
+flex-direction: column;
+gap: 5em;
+
 }

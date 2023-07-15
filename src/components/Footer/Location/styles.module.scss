@@ -15,3 +15,14 @@
   @include mix.h5(#ffffff);
   text-align: center;
 }
+
+
+@media (max-width: 748px) {
+  .container {
+    gap: 1em;
+  }
+  
+  .content {
+    @include mix.h6(#ffffff);
+  }
+}
